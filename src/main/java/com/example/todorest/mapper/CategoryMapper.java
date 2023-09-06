@@ -1,7 +1,7 @@
-package com.example.mapper;
+package com.example.todorest.mapper;
 
-import com.example.dto.CategoryDto;
-import com.example.entity.Category;
+import com.example.todorest.dto.CategoryDto;
+import com.example.todorest.entity.Category;
 import org.mapstruct.Mapper;
 
 import java.util.List;

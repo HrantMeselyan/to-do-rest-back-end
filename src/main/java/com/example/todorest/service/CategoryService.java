@@ -1,6 +1,6 @@
-package com.example.service;
+package com.example.todorest.service;
 
-import com.example.dto.CategoryDto;
+import com.example.todorest.dto.CategoryDto;
 
 import java.util.List;
 

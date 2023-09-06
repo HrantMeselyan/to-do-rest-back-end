@@ -1,8 +1,7 @@
-package com.example.dto;
+package com.example.todorest.dto;
 
-import com.example.entity.Category;
-import com.example.entity.Status;
-import jakarta.persistence.*;
+import com.example.todorest.entity.Category;
+import com.example.todorest.entity.Status;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

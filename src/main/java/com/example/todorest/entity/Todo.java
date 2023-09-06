@@ -1,7 +1,6 @@
-package com.example.entity;
+package com.example.todorest.entity;
 
-import com.example.entity.Category;
-import com.example.entity.Status;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -20,6 +19,7 @@ public class Todo {
     private int id;
     private String title;
     @Enumerated(EnumType.STRING)
+    @JsonProperty("status")
     private Status status;
     @ManyToOne
     Category category;

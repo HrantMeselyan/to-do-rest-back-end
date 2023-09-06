@@ -1,20 +1,22 @@
-package com.example.service;
+package com.example.todorest.service;
 
-import com.example.dto.TodoDto;
-import com.example.entity.Todo;
+import com.example.todorest.dto.ToDoRequestDto;
+import com.example.todorest.dto.TodoDto;
+import com.example.todorest.entity.Status;
+import com.example.todorest.entity.Todo;
 
 import java.util.List;
 
 public interface TodoService {
-    TodoDto create(TodoDto todoDto);
+    TodoDto create(ToDoRequestDto toDoRequestDto);
 
-    List<TodoDto> getAll(int id);
+    List<TodoDto> getAll();
 
     List<Todo> findAllByCategoryId(int categoryId);
 
-    boolean delete(int id, int userId);
+    void delete(int id);
 
-    List<Todo> findAllByStatus(int id, String status);
+    List<Todo> findAllByStatus(Status status);
 }
 
 

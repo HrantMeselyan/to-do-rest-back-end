@@ -1,4 +1,4 @@
-package com.example.entity;
+package com.example.todorest.entity;
 
 public enum Role {
     ADMIN,
